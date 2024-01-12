@@ -14,7 +14,7 @@ import os
 
 def download_model():
     # 下载大语言模型
-    download(model_repo='OpenLMLab/InternLM-chat-7b', output='./InternLM-chat-7b')
+    download(model_repo='OpenLMLab/InternLM-chat-7b', output='InternLM-chat-7b')
     # 下载 Embedding 模型
     os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'    
     os.system('huggingface-cli download --resume-download BAAI/bge-large-zh --local-dir bge-large-zh')
